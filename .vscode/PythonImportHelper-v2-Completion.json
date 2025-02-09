@@ -1,0 +1,28 @@
+[
+    {
+        "label": "inf",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "getFirstUniqueChar",
+        "kind": 2,
+        "importPath": "python.first-unique-char",
+        "description": "python.first-unique-char",
+        "peekOfCode": "def getFirstUniqueChar(s: str) -> int:\n    freq = dict(\n        {\n            'a': -1,\n            'b': -1,\n            'c': -1,\n            'd': -1,\n            'e': -1,\n            'f': -1,\n            'g': -1,",
+        "detail": "python.first-unique-char",
+        "documentation": {}
+    },
+    {
+        "label": "first_unique",
+        "kind": 5,
+        "importPath": "python.first-unique-char",
+        "description": "python.first-unique-char",
+        "peekOfCode": "first_unique = getFirstUniqueChar('abcdafgb')\nprint(first_unique)",
+        "detail": "python.first-unique-char",
+        "documentation": {}
+    }
+]
