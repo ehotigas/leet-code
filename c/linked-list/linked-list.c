@@ -8,7 +8,7 @@ struct Node {
 
 
 struct Node *Node(void *value, struct Node *next) {
-    struct Node *node = malloc(sizeof(struct Node *));
+    struct Node *node = malloc(sizeof(struct Node));
     node->next = next;
     node->value = value;
     return node;
@@ -20,7 +20,7 @@ struct List {
 };
 
 struct List *List() {
-    struct List *list = malloc(sizeof(struct List*));
+    struct List *list = malloc(sizeof(struct List));
     list->size = 0;
     list->root = NULL;
     return list;
