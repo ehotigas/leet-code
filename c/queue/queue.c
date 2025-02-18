@@ -41,9 +41,16 @@ void add(struct Queue *queue, void *value) {
 
 void *pop(struct Queue *queue) {
     if (isEmpty(queue)) return NULL;
+    if (queue->size == 1) {
+        void *value = queue->root->value;
+        free(queue->root);
+        queue->root = NULL;
+    }
     struct Node *ref = queue->root;
     while (ref->next != NULL) ref = ref->next;
-    void *value = value
+    void *value = ref->value;
+    free(ref);
+    return value;
 }
 
 // pop
